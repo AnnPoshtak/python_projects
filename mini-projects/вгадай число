@@ -13,5 +13,5 @@ while my != random:
 	
 if my==random:
 	print("\n"*100)
-	print("Вітаю ви вгадали число з ",sproba," спроби.")
+	print("Вітаю ви вгадали число з ",sproba," спроби")
 	
