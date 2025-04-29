@@ -3,7 +3,7 @@ w = [""]*len(word)
 i = 0
 m = 0
 k=0
-w1 = ""
+w2 = ""
 print("Зашифроване слово: ")
 while i<len(word) :
     w[i]=""
@@ -11,6 +11,6 @@ while i<len(word) :
     i+=1
 
 while m<len(word):
-    w1+=w[len(word)-m-1]
+    w2+=w[len(word)-m-1]
     m +=1
-print(w1)
+print(w2)
