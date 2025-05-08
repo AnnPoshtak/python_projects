@@ -2,8 +2,6 @@ from tkinter import*
 from tkinter import messagebox
 import random
 import pyperclip
-from pyexpat.errors import messages
-
 tk = Tk()
 long = 0
 test = 0
@@ -30,7 +28,6 @@ def g_click ():
                      "u", "v", "w", "x", "y", "z"]
     number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     symbols = ['!', '@', '#', '$', '%', '&', '*', '{', '~']
-    number2 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     password = [""] * long
     i = 0
     total = 0
@@ -51,11 +48,6 @@ def g_click ():
         total += 1
         if total == long:
             break
-        password[i] += random.choice(number2)
-        total += 1
-        if total == long:
-            break
-        i += 1
     random.shuffle(password)
     i = 0
     while i < long:
