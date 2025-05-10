@@ -8,6 +8,7 @@ test = 0
 ent = Entry()
 password1 =""
 tk.geometry("200x200")
+tk.title("Генератор паролю")
 ent.place(x=10,y=10,width=180,height=25)
 label1 = Label(text='Скільки символів повинно бути \n у вашому паролі?')
 label1.place(x=10,y=40)
@@ -18,6 +19,7 @@ def g_click ():
     if test == 1:
         pyperclip.copy(password1)
         messagebox.showinfo("Ваш парль скопійовано!","Ваш парль скопійовано!")
+        return
     long = int(ent.get())
     ent.delete(0, END)
     label1.configure(text="Ваш пароль готовий! \n Ви можете скопіювати його \n у буфер обміну")

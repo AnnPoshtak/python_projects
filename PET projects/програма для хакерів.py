@@ -2,7 +2,7 @@ from tkinter import*
 from tkinter import messagebox
 import webbrowser
 import time
-password = 123
+password = 12345678
 import pyautogui
 password1 = ""
 tk = Tk()
