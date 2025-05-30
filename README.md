@@ -1,2 +1,2 @@
-# Всі мої проекти з pycharm
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+# Всі мої проекти з pythob
+В кожній папці є по декілька проектів, кожен зроблено мною
