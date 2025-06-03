@@ -25,5 +25,6 @@ for j in range (8):
         right(120)
     end_fill()
     lt(60)
-
+color("white")
+forward(200)
 done()
