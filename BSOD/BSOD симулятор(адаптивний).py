@@ -1,7 +1,8 @@
 from tkinter import*
+from tkinter import messagebox
 import random
 timer = 0
-files = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png"]
+files = ["img/1.png","img/2.png","img/3.png","img/4.png"]
 code = ["CRITICAL_PROCESS_DIED","MEMORY_MANAGEMENT","KERNEL_DATA_INPAGE_ERROR","IRQL_NOT_LESS_OR_EQUAL","TOO_MANY_CATS","GOD_MODE_ACTIVATED","BLUE_SCREEN_OF_APOCALYPSE"]
 def exit_fullscreen(event=None):
     tk.attributes('-fullscreen', False)
@@ -36,21 +37,23 @@ def BSOD():
     tk.bind("<Escape>", exit_fullscreen)
     l_smile = Label(text=":(",font="Arial, 100")
     l_smile.configure(bg=color,fg="white")
-    l_smile.place(x=200,y=100)
+    l_smile.place(relx=0.12,rely=0.1)
     l_text = Label(text="Your PC ran into a problem and needs to restart. We're just \n collecting some error info, and then we'll restart for you         ", font="Arial, 30")
     l_text.configure(bg=color,fg="white")
-    l_text.place(x=200,y=270)
+    l_text.place(relx=0.12,rely=0.33)
     l_timer = Label(text=f"Complete: {timer}",font="Arial. 30")
     l_timer.configure(bg=color, fg="white")
-    l_timer.place(x=200,y=400)
+    l_timer.place(relx=0.12,rely=0.48)
     l_stop_code = Label(text="Stop code:"+random.choice(code),font="Arial, 20")
     l_stop_code.configure(bg=color, fg="white")
-    l_stop_code.place(x=430,y=600)
+    l_stop_code.place(relx=0.28,rely=0.7)
     canvas = Canvas(width=photo.width(), height=photo.height(), highlightthickness=0, bd=0)
-    canvas.place(x=200,y=500)
+    canvas.place(relx=0.12,rely=0.6)
     canvas.create_image(0, 0, anchor=NW, image=photo)
-    for i in range(100):
-        tk.after(2000*i, plus)
+    for i in range(255):
+        tk.after(1000*i, plus)
+
+
 
 tk.geometry("500x300")
 l1 = Label(text="BSOD налаштування",font="50")
